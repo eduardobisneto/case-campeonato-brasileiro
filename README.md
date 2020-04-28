@@ -16,17 +16,7 @@ Os passos são:
 
 Retorna:
 
-Posição
-Nome do Time
-Pontuação total
-Qtde de campeonatos disputados
-Total de Jogos
-Total de Vitorias
-Total de Empates
-Total de  Derrotas
-Total de Gols Prós
-Total de Gols Contras
-Saldo de gols
+Posição, Nome do Time, Pontuação total, Qtde de campeonatos disputados, Total de Jogos, Total de Vitorias, Total de Empates, Total de  Derrotas, Total de Gols Prós, Total de Gols Contras, Saldo de gols
 
 Endpoint Por Estado
 https://localhost:5001/api/campeonatobrasileiro/por-estado/{sigla do estado}
@@ -42,17 +32,7 @@ Os passos são:
 
 Retorna:
 
-Posição
-Estado
-Pontuação total
-Qtde de campeonatos disputados
-Total de Jogos
-Total de Vitorias
-Total de Empates
-Total de Derrotas
-Total de Gols Prós
-Total de Gols Contra
-Saldo de Gols
+Posição, Estado, Pontuação total, Qtde de campeonatos disputados, Total de Jogos, Total de Vitorias, Total de Empates, Total de Derrotas, Total de Gols Prós, Total de Gols Contra, Saldo de Gols
 
 Endpoint de Informações Adicionais
 https://localhost:5001/api/campeonatobrasileiro/informacoes-adicionais
@@ -74,11 +54,4 @@ Os passos são:
 
 Retorna
 
-Time com melhor média de gols a favor
-Time com melhor média de gols contra
-Time com maior numero de vitórias
-Time com menor numero de vitórias
-Time com melhor média de vitorias por Campeonato
-Time com menor média de vitórias por Campeonato
-
-Há também testes unitários.
+Time com melhor média de gols a favor, Time com melhor média de gols contra, Time com maior numero de vitórias, Time com menor numero de vitórias, Time com melhor média de vitorias por Campeonato, Time com menor média de vitórias por Campeonato
