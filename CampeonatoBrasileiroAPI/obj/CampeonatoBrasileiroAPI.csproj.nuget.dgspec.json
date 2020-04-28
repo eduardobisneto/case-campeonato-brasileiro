@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj": {}
+    "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj": {
+    "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj",
+        "projectUniqueName": "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj",
         "projectName": "CampeonatoBrasileiroAPI.Helpers",
-        "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj",
+        "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj",
         "packagesPath": "C:\\Users\\Eduardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.Helpers\\obj\\",
+        "outputPath": "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI.Helpers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj": {
+    "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj",
         "projectName": "CampeonatoBrasileiroAPI",
-        "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj",
+        "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj",
         "packagesPath": "C:\\Users\\Eduardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\obj\\",
+        "outputPath": "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -88,8 +88,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj": {
-                "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj"
+              "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj": {
+                "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj"
               }
             }
           }

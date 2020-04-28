@@ -4328,11 +4328,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.TestesUnitarios\\CampeonatoBrasileiroAPI.TestesUnitarios.csproj",
+      "projectUniqueName": "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI.TestesUnitarios\\CampeonatoBrasileiroAPI.TestesUnitarios.csproj",
       "projectName": "CampeonatoBrasileiroAPI.TestesUnitarios",
-      "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.TestesUnitarios\\CampeonatoBrasileiroAPI.TestesUnitarios.csproj",
+      "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI.TestesUnitarios\\CampeonatoBrasileiroAPI.TestesUnitarios.csproj",
       "packagesPath": "C:\\Users\\Eduardo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.TestesUnitarios\\obj\\",
+      "outputPath": "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI.TestesUnitarios\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -4354,8 +4354,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj": {
-              "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj"
+            "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj": {
+              "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj"
             }
           }
         }

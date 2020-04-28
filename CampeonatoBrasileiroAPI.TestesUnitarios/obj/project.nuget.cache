@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yWSnR11fmR7EBqCZUhpBE/PW6Ufu4xyCBnZUjX1S8KR3bIJr1FPHh4Qxyn6+H6kkj9G/FZN81cumaOx1kBVIMA==",
+  "dgSpecHash": "1XFnRcefTvPfEd8ZUItQB7EzZirSNZiRlhCxt7p6lrCz8n1aD/a/1Zys3IPym9oBIJzh2DctbkqP4g/1g1qqaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.TestesUnitarios\\CampeonatoBrasileiroAPI.TestesUnitarios.csproj",
+  "projectFilePath": "C:\\Users\\Eduardo\\Source\\repos\\case-campeonato-brasileiro\\CampeonatoBrasileiroAPI.TestesUnitarios\\CampeonatoBrasileiroAPI.TestesUnitarios.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eduardo\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\Eduardo\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
