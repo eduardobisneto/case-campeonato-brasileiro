@@ -1,0 +1,212 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.TestesUnitarios\\CampeonatoBrasileiroAPI.TestesUnitarios.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj",
+        "projectName": "CampeonatoBrasileiroAPI.Helpers",
+        "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj",
+        "packagesPath": "C:\\Users\\Eduardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.Helpers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Eduardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/imazen-nightlies/.": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.TestesUnitarios\\CampeonatoBrasileiroAPI.TestesUnitarios.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.TestesUnitarios\\CampeonatoBrasileiroAPI.TestesUnitarios.csproj",
+        "projectName": "CampeonatoBrasileiroAPI.TestesUnitarios",
+        "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.TestesUnitarios\\CampeonatoBrasileiroAPI.TestesUnitarios.csproj",
+        "packagesPath": "C:\\Users\\Eduardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.TestesUnitarios\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Eduardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/imazen-nightlies/.": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj": {
+                "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj",
+        "projectName": "CampeonatoBrasileiroAPI",
+        "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.csproj",
+        "packagesPath": "C:\\Users\\Eduardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Eduardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/imazen-nightlies/.": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj": {
+                "projectPath": "C:\\Users\\Eduardo\\Source\\repos\\CampeonatoBrasileiroAPI\\CampeonatoBrasileiroAPI.Helpers\\CampeonatoBrasileiroAPI.Helpers.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.8, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

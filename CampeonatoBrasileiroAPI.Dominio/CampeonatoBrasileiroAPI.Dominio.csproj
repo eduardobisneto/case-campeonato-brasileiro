@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CampeonatoBrasileiroAPI.Helpers\CampeonatoBrasileiroAPI.Helpers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Repository\data.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
