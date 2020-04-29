@@ -24,3 +24,11 @@ C:\Users\Eduardo\Source\repos\CampeonatoBrasileiroAPI\CampeonatoBrasileiroAPI.He
 C:\Users\Eduardo\Source\repos\CampeonatoBrasileiroAPI\CampeonatoBrasileiroAPI.Helpers\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.dll
 C:\Users\Eduardo\Source\repos\CampeonatoBrasileiroAPI\CampeonatoBrasileiroAPI.Helpers\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.pdb
 C:\Users\Eduardo\Source\repos\CampeonatoBrasileiroAPI\CampeonatoBrasileiroAPI.Helpers\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.csprojAssemblyReference.cache
+C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.Helpers\bin\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.deps.json
+C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.Helpers\bin\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.dll
+C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.Helpers\bin\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.pdb
+C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.Helpers\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.Helpers\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.AssemblyInfoInputs.cache
+C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.Helpers\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.AssemblyInfo.cs
+C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.Helpers\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.dll
+C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.Helpers\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.pdb

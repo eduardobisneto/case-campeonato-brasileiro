@@ -1,6 +1,8 @@
 ﻿using CampeonatoBrasileiroAPI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
+using System.Collections.Generic;
 
 namespace CampeonatoBrasileiroAPI.Controllers
 {
@@ -8,11 +10,15 @@ namespace CampeonatoBrasileiroAPI.Controllers
     [ApiController]
     public class CampeonatoBrasileiroController : Controller
     {
+        private readonly ILogger<CampeonatoBrasileiroController> logger;
         private readonly IService service;
 
-        public CampeonatoBrasileiroController(IService _service)
+        public CampeonatoBrasileiroController(
+            IService _service,
+            ILogger<CampeonatoBrasileiroController> _logger)
         {
             service = _service;
+            logger = _logger;
         }
 
         //endpoint: https://localhost:5001/api/campeonatobrasileiro/por-time/palmeiras
@@ -21,11 +27,17 @@ namespace CampeonatoBrasileiroAPI.Controllers
         {
             try
             {
-                return Json(service.PorTime(nomeTime));
+                object listaTimes = service.PorTime(nomeTime);
+
+                logger.LogInformation("Executou o método PorTime da API com sucesso.");
+
+                return Json(listaTimes);
             }
             catch (Exception ex)
             {
-                return Json(ex.Message);
+                logger.LogError(ex.Message);
+
+                return Json("Ops, ocorreu um erro. Verifique o arquivo de log.");
             }
         }
 
@@ -35,11 +47,17 @@ namespace CampeonatoBrasileiroAPI.Controllers
         {
             try
             {
-                return Json(service.PorEstado(siglaEstado));
+                IEnumerable<object> porEstado = service.PorEstado(siglaEstado);
+
+                logger.LogInformation("Executou o método PorEstado da API com sucesso.");
+
+                return Json(porEstado);
             }
             catch (Exception ex)
             {
-                return Json(ex.Message);
+                logger.LogError(ex.Message);
+
+                return Json("Ops, ocorreu um erro. Verifique o arquivo de log.");
             }
         }
 
@@ -49,11 +67,15 @@ namespace CampeonatoBrasileiroAPI.Controllers
         {
             try
             {
-                return Json(service.InformacoesComplementares());
+                object informacoesComplementares = service.InformacoesComplementares();
+
+                logger.LogInformation("Executou o método PorEstado da API com sucesso.");
+
+                return Json(informacoesComplementares);
             }
             catch (Exception ex)
             {
-                return Json(ex.Message);
+                return Json("Ops, ocorreu um erro. Verifique o arquivo de log.");
             }
         }
     }

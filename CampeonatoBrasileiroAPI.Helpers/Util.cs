@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CampeonatoBrasileiroAPI.Helpers
 {
-    public static class Util
+    public static class Funcoes
     {
         public static string RemoverAcentosNomeTime(string text)
         {

@@ -1,4 +1,5 @@
 using CampeonatoBrasileiroAPI.Entity;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,6 +8,13 @@ namespace CampeonatoBrasileiroAPI.Repository
 {
     public class BaseRepository : IRepository
     {
+        private readonly ILogger<BaseRepository> logger;
+
+        public BaseRepository(ILogger<BaseRepository> _logger)
+        {
+            logger = _logger;
+        }
+
         /// <summary>
         /// Retorna as dados lidos e convertidos do arquivo
         /// </summary>
@@ -53,8 +61,8 @@ namespace CampeonatoBrasileiroAPI.Repository
 
                             //Extrai os valores das colunas da linha do arquivo
                             short posicao = short.Parse(linhaAtual[0].Trim());
-                            string nomeSemAcentos = Helpers.Util.RemoverAcentosNomeTime(linhaAtual[1].Trim());
-                            string nomePadronizado = Helpers.Util.PadronizarNomeTime(nomeSemAcentos);
+                            string nomeSemAcentos = Helpers.Funcoes.RemoverAcentosNomeTime(linhaAtual[1].Trim());
+                            string nomePadronizado = Helpers.Funcoes.PadronizarNomeTime(nomeSemAcentos);
                             string nome = nomePadronizado;
                             string estado = linhaAtual[2].Trim();
                             short pontos = short.Parse(linhaAtual[3].Trim());

@@ -1,10 +1,12 @@
-﻿using CampeonatoBrasileiroAPI.Repository;
+﻿using CampeonatoBrasileiroAPI.Helpers;
+using CampeonatoBrasileiroAPI.Repository;
 using CampeonatoBrasileiroAPI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace CampeonatoBrasileiroAPI
 {
@@ -27,8 +29,13 @@ namespace CampeonatoBrasileiroAPI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddProvider(new CustomLoggerProvider(new CustomLoggerProviderConfiguration
+            {
+                LogLevel = LogLevel.Information
+            }));
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

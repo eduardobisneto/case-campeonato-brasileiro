@@ -1,5 +1,6 @@
 using CampeonatoBrasileiroAPI.Entity;
 using CampeonatoBrasileiroAPI.Repository;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,14 @@ namespace CampeonatoBrasileiroAPI.Services
     public class Service : IService
     {
         private readonly IRepository repository;
+        private readonly ILogger<Service> logger;
 
-        public Service(IRepository _repository)
+        public Service(
+            IRepository _repository,
+            ILogger<Service> _logger)
         {
             repository = _repository;
+            logger = _logger;
         }
 
         public IEnumerable<object> PorEstado(string siglaEstado)
@@ -20,6 +25,8 @@ namespace CampeonatoBrasileiroAPI.Services
             try
             {
                 IEnumerable<Campeonato> dados = repository.CarregarDados();
+
+                logger.LogInformation("PorEstado - Dados do arquivo carregados com sucesso");
 
                 var listaPorEstado = dados
                     //Converte o array para lista, para poder aplicar filtro, agrupar, selecionar e ordenar
@@ -46,6 +53,8 @@ namespace CampeonatoBrasileiroAPI.Services
                     .OrderByDescending(p => p.PontuacaoTotal)
                     .ToArray();
 
+                logger.LogInformation("PorEstado - Dados consolidados  com sucesso");
+
                 return listaPorEstado;
             }
             catch (Exception ex)
@@ -54,14 +63,19 @@ namespace CampeonatoBrasileiroAPI.Services
             }
         }
 
-        public IEnumerable<object> PorTime(string nomeTime)
+        public object PorTime(string nomeTime)
         {
             try
             {
                 IEnumerable<Campeonato> dados = repository.CarregarDados();
-                string nomePadronizado = Helpers.Util.PadronizarNomeTime(nomeTime).ToUpper();
 
-                var listaPorTime = dados
+                logger.LogInformation("PorTime - Dados do arquivo carregados com sucesso");
+
+                string nomePadronizado = Helpers.Funcoes.PadronizarNomeTime(nomeTime).ToUpper();
+
+                logger.LogInformation("PorEstado - Nome padronizado com sucesso");
+
+                var time = dados
                     //Converte o array para lista, para poder aplicar filtro, agrupar, selecionar e ordenar
                     .ToList()
                     //Aplica o filtro por time
@@ -84,9 +98,11 @@ namespace CampeonatoBrasileiroAPI.Services
                     })
                     //Ordena os pontos do maior para o menor
                     .OrderByDescending(p => p.PontuacaoTotal)
-                    .ToArray();
+                    .SingleOrDefault();
 
-                return listaPorTime;
+                logger.LogInformation("PorEstado - Dados consolidados com sucesso");
+
+                return time;
             }
             catch (Exception ex)
             {
@@ -100,6 +116,8 @@ namespace CampeonatoBrasileiroAPI.Services
             {
                 IEnumerable<Campeonato> dados = repository.CarregarDados();
 
+                logger.LogInformation("InformacoesComplementares - Dados do arquivo carregados com sucesso");
+
                 //Retorna a Quantidade de Campeonatos
                 var quantidadeCampeonatos = dados
                     .ToList()
@@ -109,6 +127,8 @@ namespace CampeonatoBrasileiroAPI.Services
                         Ano = g.Key
                     })
                     .Count();
+
+                logger.LogInformation("InformacoesComplementares - Quantidade de campeonatos carregada");
 
                 var listaInformacoesComplementares = dados
                     //Converte o array para lista, para poder aplicar filtro, agrupar, selecionar e ordenar
@@ -142,6 +162,8 @@ namespace CampeonatoBrasileiroAPI.Services
                     .OrderByDescending(x => x.MediaGolsAFavor)
                     .FirstOrDefault();
 
+                logger.LogInformation("InformacoesComplementares - Time de melhor média de gols a favor calculado");
+
                 //Ordena pelo Time com Melhor Média de Gols Contra
                 //Melhor Média de Gols Contra
                 //Quantidade de Gols Contra / Quantidade de Campeonatos / Número e Jogos
@@ -154,6 +176,8 @@ namespace CampeonatoBrasileiroAPI.Services
                     .OrderBy(x => x.MediaGolsContra)
                     .FirstOrDefault();
 
+                logger.LogInformation("InformacoesComplementares - Time de melhor média de gols contra calculado");
+
                 //Ordena pelo Time com Maior Número de Vitorias no Período
                 var timeMaiorNumeroVitorias = listaInformacoesComplementares
                     .Select(t => new
@@ -164,6 +188,8 @@ namespace CampeonatoBrasileiroAPI.Services
                     .OrderByDescending(x => x.NumeroVitorias)
                     .FirstOrDefault();
 
+                logger.LogInformation("InformacoesComplementares - Time com o maior número de vitórias calculado");
+
                 //Ordena pelo Time com Menor Número de Vitorias no Período
                 var timeMenorNumeroVitorias = listaInformacoesComplementares
                     .Select(t => new
@@ -173,6 +199,8 @@ namespace CampeonatoBrasileiroAPI.Services
                     })
                     .OrderBy(x => x.NumeroVitorias)
                     .FirstOrDefault();
+
+                logger.LogInformation("InformacoesComplementares - Time com o menor número de vitórias calculado");
 
                 var listainformacoesComplementaresAno = dados
                     //Converte o array para lista, para poder aplicar filtro, agrupar, selecionar e ordenar
@@ -195,6 +223,8 @@ namespace CampeonatoBrasileiroAPI.Services
                         SaldoGols = g.Sum(x => x.GolsAFavor - x.GolsContra)
                     });
 
+                logger.LogInformation("InformacoesComplementares - Agrupou os dados por ano e time");
+
                 //Ordena pelo Time com Maior Media de Vitorias Por Campeonato
                 //Maior Media de Vitorias Por Campeonato
                 //Time com maior valor do Total de Vitorias no Campeonato / Total de Jogos no Campeonato
@@ -206,6 +236,8 @@ namespace CampeonatoBrasileiroAPI.Services
                     })
                     .OrderByDescending(x => x.MediaVitoriasPorCampeonato)
                     .FirstOrDefault();
+
+                logger.LogInformation("InformacoesComplementares - Time de melhor média de vitórias por campeonato calculado");
 
                 //Ordena pelo Time com Menor Media de Vitorias Por Campeonato
                 //Menor Media de Vitorias Por Campeonato
@@ -219,6 +251,8 @@ namespace CampeonatoBrasileiroAPI.Services
                     .OrderBy(x => x.MediaVitoriasPorCampeonato)
                     .FirstOrDefault();
 
+                logger.LogInformation("InformacoesComplementares - Time de menor média de vitórias por campeonato calculado");
+
                 //Retorna o objeto calculado
                 var informacoesComplementares = new
                 {
@@ -229,6 +263,8 @@ namespace CampeonatoBrasileiroAPI.Services
                     MelhorMediaVitoriasPorCampeonato = timeMelhorMediaVitoriasPorCampeonato,
                     MenorMediaVitoriasPorCampeonato = timeMenorMediaVitoriasPorCampeonato
                 };
+
+                logger.LogInformation("InformacoesComplementares - Dados consolidados com sucesso");
 
                 return informacoesComplementares;
             }

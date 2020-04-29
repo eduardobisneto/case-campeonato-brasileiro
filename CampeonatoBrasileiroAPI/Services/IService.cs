@@ -4,7 +4,7 @@ namespace CampeonatoBrasileiroAPI.Services
 {
     public interface IService
     {
-        IEnumerable<object> PorTime(string nomeTime);
+        object PorTime(string nomeTime);
 
         IEnumerable<object> PorEstado(string siglaEstado);
 
