@@ -33,9 +33,9 @@ namespace CampeonatoBrasileiroAPI.Controllers
 
                 return Json(listaTimes);
             }
-            catch (Exception ex)
+            catch (Exception exception)
             {
-                logger.LogError(ex.Message);
+                logger.LogError(exception.Message);
 
                 return Json("Ops, ocorreu um erro. Verifique o arquivo de log.");
             }
@@ -53,9 +53,9 @@ namespace CampeonatoBrasileiroAPI.Controllers
 
                 return Json(porEstado);
             }
-            catch (Exception ex)
+            catch (Exception exception)
             {
-                logger.LogError(ex.Message);
+                logger.LogError(exception.Message);
 
                 return Json("Ops, ocorreu um erro. Verifique o arquivo de log.");
             }
@@ -73,8 +73,10 @@ namespace CampeonatoBrasileiroAPI.Controllers
 
                 return Json(informacoesComplementares);
             }
-            catch (Exception ex)
+            catch (Exception exception)
             {
+                logger.LogError(exception.Message);
+
                 return Json("Ops, ocorreu um erro. Verifique o arquivo de log.");
             }
         }

@@ -32,3 +32,4 @@ C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI
 C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.Helpers\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.AssemblyInfo.cs
 C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.Helpers\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.dll
 C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.Helpers\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.pdb
+C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.Helpers\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.csprojAssemblyReference.cache

@@ -1,28 +1,27 @@
 ﻿using System;
 using System.Globalization;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace CampeonatoBrasileiroAPI.Helpers
 {
-    public static class Funcoes
+    public static class Util
     {
         public static string RemoverAcentosNomeTime(string text)
         {
             try
             {
-                StringBuilder sbReturn = new StringBuilder();
-                var arrayText = text.Normalize(NormalizationForm.FormD).ToCharArray();
-                foreach (char letter in arrayText)
+                StringBuilder stringBuilder = new StringBuilder();
+                var array = text.Normalize(NormalizationForm.FormD).ToCharArray();
+                foreach (char letra in array)
                 {
-                    if (CharUnicodeInfo.GetUnicodeCategory(letter) != UnicodeCategory.NonSpacingMark)
-                        sbReturn.Append(letter);
+                    if (CharUnicodeInfo.GetUnicodeCategory(letra) != UnicodeCategory.NonSpacingMark)
+                        stringBuilder.Append(letra);
                 }
-                return sbReturn.ToString();
+                return stringBuilder.ToString();
             }
-            catch (Exception ex)
+            catch (Exception exception)
             {
-                throw new Exception(ex.Message);
+                throw new Exception(exception.Message);
             }
         }
 
@@ -57,9 +56,9 @@ namespace CampeonatoBrasileiroAPI.Helpers
 
                 return nomeTimePadronizado;
             }
-            catch (Exception ex)
+            catch (Exception exception)
             {
-                throw new Exception(ex.Message);
+                throw new Exception(exception.Message);
             }
         }
     }

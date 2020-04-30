@@ -1,5 +1,4 @@
 using CampeonatoBrasileiroAPI.Entity;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -18,7 +17,9 @@ namespace CampeonatoBrasileiroAPI.Repository
         /// <returns></returns>
         public IEnumerable<Campeonato> CarregarDados()
         {
-            Campeonato[] campeonatos = new Campeonato[100];
+            const short QUANTIDADE_CAMPEONATOS = 100;
+            const short QUANTIDADE_CARACTERES_ANO = 4;
+            Campeonato[] campeonatos = new Campeonato[QUANTIDADE_CAMPEONATOS];
 
             //Stream de leitura de arquivo, lendo linha a linha
             using (StreamReader streamReader = new StreamReader(@"repository\data.txt"))
@@ -39,7 +40,7 @@ namespace CampeonatoBrasileiroAPI.Repository
                     //Linha com o ano da tabela de pontuação
                     if (linhaAtual.Length > 0)
                     {
-                        if (linhaAtual[0].Length == 4)
+                        if (linhaAtual[0].Length == QUANTIDADE_CARACTERES_ANO)
                         {
                             ano = Convert.ToInt16(linhaAtual[0].Trim());
                         }
@@ -58,8 +59,8 @@ namespace CampeonatoBrasileiroAPI.Repository
 
                             //Extrai os valores das colunas da linha do arquivo
                             short posicao = short.Parse(linhaAtual[0].Trim());
-                            string nomeSemAcentos = Helpers.Funcoes.RemoverAcentosNomeTime(linhaAtual[1].Trim());
-                            string nomePadronizado = Helpers.Funcoes.PadronizarNomeTime(nomeSemAcentos);
+                            string nomeSemAcentos = Helpers.Util.RemoverAcentosNomeTime(linhaAtual[1].Trim());
+                            string nomePadronizado = Helpers.Util.PadronizarNomeTime(nomeSemAcentos);
                             string nome = nomePadronizado;
                             string estado = linhaAtual[2].Trim();
                             short pontos = short.Parse(linhaAtual[3].Trim());

@@ -57,9 +57,9 @@ namespace CampeonatoBrasileiroAPI.Services
 
                 return listaPorEstado;
             }
-            catch (Exception ex)
+            catch (Exception exception)
             {
-                throw new Exception(ex.Message);
+                throw new Exception(exception.Message);
             }
         }
 
@@ -71,7 +71,7 @@ namespace CampeonatoBrasileiroAPI.Services
 
                 logger.LogInformation("PorTime - Dados do arquivo carregados com sucesso");
 
-                string nomePadronizado = Helpers.Funcoes.PadronizarNomeTime(nomeTime).ToUpper();
+                string nomePadronizado = Helpers.Util.PadronizarNomeTime(nomeTime).ToUpper();
 
                 logger.LogInformation("PorEstado - Nome padronizado com sucesso");
 
@@ -104,9 +104,9 @@ namespace CampeonatoBrasileiroAPI.Services
 
                 return time;
             }
-            catch (Exception ex)
+            catch (Exception exception)
             {
-                throw new Exception(ex.Message);
+                throw new Exception(exception.Message);
             }
         }
 
@@ -268,9 +268,9 @@ namespace CampeonatoBrasileiroAPI.Services
 
                 return informacoesComplementares;
             }
-            catch (Exception ex)
+            catch (Exception exception)
             {
-                throw new Exception(ex.Message);
+                throw new Exception(exception.Message);
             }
         }
     }
