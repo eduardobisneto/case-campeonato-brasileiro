@@ -1,6 +1,7 @@
 using CampeonatoBrasileiroAPI.Entity;
 using CampeonatoBrasileiroAPI.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,11 +10,12 @@ namespace CampeonatoBrasileiroAPI.TestesUnitarios
     [TestClass]
     public class TestesRepository
     {
+
         [TestMethod]
         [DeploymentItem(@"repository\data.txt", "optionalOutFolder")]
         public void TestarCarregarRegistros()
         {
-            IRepository repository = new BaseRepository();
+            IRepository repository = new Mock<BaseRepository>().Object;
 
             IEnumerable<Campeonato> campeonatos = repository.CarregarDados();
             int quantidadeAtual = campeonatos.Count();
@@ -25,7 +27,7 @@ namespace CampeonatoBrasileiroAPI.TestesUnitarios
         [DeploymentItem(@"repository\data.txt", "optionalOutFolder")]
         public void TestarQuantidadeRegistros()
         {
-            IRepository repository = new BaseRepository();
+            IRepository repository = new Mock<BaseRepository>().Object;
 
             IEnumerable<Campeonato> campeonatos = repository.CarregarDados();
 

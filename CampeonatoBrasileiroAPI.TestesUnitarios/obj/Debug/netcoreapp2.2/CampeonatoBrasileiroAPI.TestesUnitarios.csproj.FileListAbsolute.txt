@@ -42,7 +42,6 @@ C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI
 C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.TestesUnitarios\bin\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.pdb
 C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.TestesUnitarios\bin\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.Helpers.pdb
 C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.TestesUnitarios\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.TestesUnitarios.csprojAssemblyReference.cache
-C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.TestesUnitarios\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.TestesUnitarios.csproj.CoreCompileInputs.cache
 C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.TestesUnitarios\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.TestesUnitarios.AssemblyInfoInputs.cache
 C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.TestesUnitarios\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.TestesUnitarios.AssemblyInfo.cs
 C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.TestesUnitarios\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.TestesUnitarios.csproj.CopyComplete
@@ -57,3 +56,4 @@ C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI
 C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.TestesUnitarios\bin\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.TestesUnitarios.runtimeconfig.dev.json
 C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.TestesUnitarios\bin\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.TestesUnitarios.dll
 C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.TestesUnitarios\bin\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.TestesUnitarios.pdb
+C:\Users\Eduardo\Source\repos\case-campeonato-brasileiro\CampeonatoBrasileiroAPI.TestesUnitarios\obj\Debug\netcoreapp2.2\CampeonatoBrasileiroAPI.TestesUnitarios.csproj.CoreCompileInputs.cache

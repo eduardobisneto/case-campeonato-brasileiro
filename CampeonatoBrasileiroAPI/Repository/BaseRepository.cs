@@ -8,11 +8,8 @@ namespace CampeonatoBrasileiroAPI.Repository
 {
     public class BaseRepository : IRepository
     {
-        private readonly ILogger<BaseRepository> logger;
-
-        public BaseRepository(ILogger<BaseRepository> _logger)
+        public BaseRepository()
         {
-            logger = _logger;
         }
 
         /// <summary>
